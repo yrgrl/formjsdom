@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>My Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+<script src="script.js"></script>
+</head>
+<body>
+  <form id="myForm">
+    <h2>Personal Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" pattern="[a-zA-Z ]+"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="phone">Phone:</label>
+    <select id="country-code" name="country-code">
+      <option value="">Select a country code</option>
+      <option value="+1">United States (+1)</option>
+      <option value="+44">United Kingdom (+44)</option>
+      <option value="+254">Kenya (+254)</option>
+    </select>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" inputmode="numeric">
+    <br><br>
+    <h2>Address</h2>
+    <label for="street">Street:</label>
+    <select id="street" name="street">
+      <option value="">Select a street</option>
+      <option value="Mfangano St">Mfangano St</option>
+      <option value="Ronald Ngala St">Ronald Ngala St</option>
+      <option value="Dedan Kimathi St">Dedan Kimathi St</option>
+    </select><br><br>
+    <label for="city">City:</label>
+    <select id="city" name="city">
+    <option value="">Select a city</option>
+  <option value="Nairobi">Nairobi</option>
+  <option value="Mombasa">Mombasa</option>
+  <option value="Kisumu">Kisumu</option>
+  <option value="Nakuru">Nakuru</option>
+</select><br><br>
+    <label for="state">State:</label>
+    <select id="state" name="state">
+      <option value="">Select a county</option>
+      <option value="NRB">Nairobi</option>
+      <option value="NKR">Nakuru</option>
+      <option value="MSA">Mombasa</option>
+      <!-- Add more states here -->
+    </select><br><br>
+    <label for="zip">Zip:</label>
+    <input type="text" id="zip" name="zip"><br><br>
+
+    <h2>Interests</h2>
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id="hobbies" name="hobbies"> Reading
+    <input type="checkbox" id="hobbies" name="hobbies"> Hiking
+    <input type="checkbox" id="hobbies" name="hobbies"> Coding<br><br>
+    <span id="hobbies-error"></span>
+    <h2>Additional Information</h2>
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
